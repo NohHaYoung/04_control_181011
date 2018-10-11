@@ -5,22 +5,22 @@
 
 int main(int argc, char *argv[]) {
 	
+	int num=0;
+	char str[100];
 	char c;
 	
-	printf("Input a char : ");
-	scanf("%c", &c); 
+	//string
+	printf("Input a string : ");
 	
-	if('A'<=c && c<='Z') {
-		printf("대문자입니다.");
+	while((c=getchar()) != '\n'){
+		if('0'<=c && c<='9'){
+		num=num+1;
+		} 
+		
+		else{
+		}
 	}
-	else if('a'<=c && c<='z'){
-		printf("소문자입니다.");
-	}
-	else if ('0'<=c && c<='9'){
-		printf("숫자입니다.");
-	}
-	else{
-	 	printf("기타문자입니다.");
-	 }
+	printf("The number of digit is %d\n", num);
+	
 	return 0;
 }
