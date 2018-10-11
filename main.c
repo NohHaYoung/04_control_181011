@@ -7,11 +7,13 @@ int main(int argc, char *argv[]) {
 	
 	int ans=59;
 	int i;
+	int num=0;
 	
 	do
 	{
 		printf("Guess a number : ");
 		scanf("%d", &i);
+		num++;
 		
 		if(i>ans){
 			printf("High!\n");
@@ -26,5 +28,6 @@ int main(int argc, char *argv[]) {
 	}
 	while (ans>i || ans<i);
 	
+	printf("trial : %i", num);
 	return 0;
 }
